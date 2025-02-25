@@ -1,0 +1,26 @@
+.header{
+    padding: 2rem;
+    background-color: rgb(221, 255, 171);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header{
+    width: 5rem;
+}
+.con-NumTit{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.circulo-header{
+    font-size: 2rem;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+}
