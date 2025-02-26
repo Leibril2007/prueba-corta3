@@ -17,7 +17,7 @@ function mostrarMenu(){
 
     let num = document.createElement('div');
     num.className = "circulo-header";
-    num.textContent = "5";
+    num.textContent = contador;
 
     contNumTit.appendChild(titulo);
     contNumTit.appendChild(num);
@@ -30,4 +30,15 @@ function mostrarMenu(){
 
 }
 
-export {mostrarMenu};
+let contador = 0;
+
+function contarProductos(carrito){
+
+    let num = document.querySelector(".circulo-header");
+    num.textContent = carrito.length;
+
+}
+
+
+
+export {mostrarMenu, contarProductos};

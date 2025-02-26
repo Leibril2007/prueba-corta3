@@ -1,4 +1,6 @@
-function producto(data, resaltarProducto, eliminarProducto){
+import { contarProductos } from "../header/header.js";
+
+function producto(data, resaltarProducto, agregarProducto, carrito){
 
     let cuadroProductoB = document.createElement('div');
     cuadroProductoB.className = "cuadro-producto";
@@ -26,11 +28,12 @@ function producto(data, resaltarProducto, eliminarProducto){
         precioBtn.appendChild(precio);
 
         let btn = document.createElement('div');
-        btn.className = "btn-eliminar";
-        btn.textContent = "eliminar";
+        btn.className = "btn-agregar";
+        btn.textContent = "agregar";
 
         btn.addEventListener("click", ()=>{
-            eliminarProducto(cadaProducto);
+            agregarProducto(eLista, carrito);
+            contarProductos(carrito);
         });
 
         precioBtn.appendChild(btn);

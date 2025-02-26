@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .cuadrito-img{
@@ -49,7 +48,7 @@
     align-items: center;
 }
 
-.btn-eliminar{
+.btn-agregar{
     background-color: rgb(25, 113, 25);
     color: aliceblue;
     font-size: 1.2rem;
@@ -60,5 +59,4 @@
 
 .resaltar{
     background: rgb(151, 255, 151);
-    cursor: pointer;
 }

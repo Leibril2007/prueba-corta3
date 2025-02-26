@@ -1,3 +1,5 @@
+//import { contador, contarProductos } from "../header/header.js";
+
 function resaltarProducto(){
 
     if(!this.classList.contains("resaltar")){
@@ -14,4 +16,10 @@ function eliminarProducto(cadaProducto){
     cadaProducto.remove();
 } 
 
-export {resaltarProducto, eliminarProducto};
+function agregarProducto(nombreProducto, carrito){
+    carrito.unshift(nombreProducto);
+    console.log(carrito);
+
+}
+
+export {resaltarProducto, eliminarProducto, agregarProducto};

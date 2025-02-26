@@ -11,4 +11,6 @@ let dataProductos = [
     "Parlante bluetooth"
 ];
 
-export {dataProductos};
+let carrito = [];
+
+export {dataProductos, carrito};
